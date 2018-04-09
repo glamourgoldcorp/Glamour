@@ -10,18 +10,25 @@
         <title>Glamour Gold Corp</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="#" style="max-width:2%"><img src="./static/images/logo.jpg" class="img-fluid" style="display: inline-block;">Glamour Gold Corp</a>
+        <nav class="navbar navbar-expand-lg navbar-toggleable-md bg-dark navbar-dark fixed-top">
+            <!-- responsive -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContents" arial-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></button>
+            <a class="navbar-brand" href="#" style="max-width:2%"><img src="./static/images/logo.jpg" class="img-fluid" style="display: inline-block;">Glamour Gold Corp
+            </a>
+            <!--  navbar items collapsible -->
+            <div class="collapse navbar-collapse" id="navbarContents">
+                <!-- navbar items -->
             <ul class="navbar-nav">
-                <li class="active mr-10">
-                    <a style="margin-left:180px;" class="nav-link" href="#">Homepage</a>
+                <li class="nav-item active mr-auto">
+                    <a style="margin-left:180px;" class="nav-link" href="#">Home</a>
                 </li>
+                <!-- dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         Services
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Marketing and Research</a>
+                        <a class="dropdown-item link " data-toggle="modal" data-target="#GServices">Marketing and Research</a>
                         <a class="dropdown-item" href="#">Business consultancy</a>
                         <a class="dropdown-item" href="#">Raw gold</a>
                         <a class="dropdown-item" href="#">Diamond</a>
@@ -46,7 +53,9 @@
             <form class="form-inline" action="/action_page.php" id="searchform">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-basic" type="submit">Search</button>
-            </form></ul>
+            </form>
+        </ul>
+        </div>
         </nav>
         <!-- carousel body.image slideshow -->
         <div id = "wrap">
@@ -110,7 +119,7 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="btn" onclick="closeNav()">&times;</a>
             <p>
-                <p id="titles" id="aboutUs">A little Bit about Us</p>
+                <h4 id="titles" id="aboutUs">A little Bit about Us</h4>
                 <p> Over a decade of marketing excellence. Glamour gold corps is a business development and creative strategy firm focused on efficiently, and end to end business delivering of transformative results.
                 When it comes to connecting your business to the Africa market, you are only as good as your results.
                 That is why we offer our clients full transparency into our tactics and outcome so that they can have a precise sense of ROI, this means collaborating with our partners to achieve our vision together. 
@@ -119,11 +128,11 @@
                 places where we source should be better off because of our presence in those communities.
                 </p>
                 <!-- vision -->
-            <p id="titles">Our Vision</p>
-            <p id="ourVision"> Become a world-class Business Consults and Marketing firm.
+            <h4 id="titles" id="ourVision">Our Vision</h4>
+            <p> Become a world-class Business Consults and Marketing firm.
                 <br/>Create sustainable value.</p>
                 <!-- our values -->
-            <p id="titles" id="ourValues">Our Values</p>
+            <h4 id="titles" id="ourValues">Our Values</h4>
             <p>
                  Our Values are simple:
                 Business integrity.<br/>
@@ -134,7 +143,7 @@
                 Be respectful and ethical, and invest in the well-being of our people, our communities and our planet.<br/>
             </p>
             <!-- title -->
-            <p id="titles" id="ourTeam">Our Team </p>
+            <h4 id="titles" id="ourTeam">Our Team </h4>
                 <!-- team carousel -->
             <div id="teamcarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -142,7 +151,7 @@
                         <img alt="CEO,Glamour Gold Corp" id="teamimgs" src="./static/images/6.jpg">
                         <div class="carousel-caption">
                             <p>
-                                MR Micheal Gardon<br/>
+                                 MR. Spencer Yagan<br/>
                                 CEO<br/>
                                 Glamour Gold Corp
                             </p>
@@ -152,10 +161,29 @@
                         <img alt="Executive Director Operation,Glamour Gold Corp" id="teamimgs" src="./static/images/5.jpg">
                         <div class="carousel-caption">
                             <p>
-                                Mr Owalu Abeko <br/>
+                                 Mr Albert Ofamijo <br/>
                                 Executive Director Operation<br/>
                                 Glamour Gold Corp
-
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Company Secretary/Legal Adviser,Glamour Gold Corp" id="teamimgs" src="./static/images/8.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                 Ms. Catherine Frederick<br/> 
+                                 Company Secretary/Legal Adviser<br/
+                                <br/> Glamour Gold Corp
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Regional Director Central Africa,Glamour Gold Corp" id="teamimgs" src="./static/images/7.jpg">
+                        <div class="carousel-caption">
+                            <p>
+                                 Ms Elizabert Freeman<br/> 
+                                 Regional Director Central Africa<br/>
+                                <br/> Glamour Gold Corp
                             </p>
                         </div>
                     </div>
@@ -163,7 +191,7 @@
                         <img alt="Executive Director Finance,Glamour Gold Corp" id="teamimgs" src="./static/images/4.jpg">
                         <div class="carousel-caption">
                             <p>
-                            Ms Catherine Federick <br/>
+                            Dr Brain Adams<br/>
                             Executive Director Finance<br/>
                             Glamour Gold Corp
 
@@ -174,7 +202,7 @@
                         <img alt="Regional Director South Africa, Glamour Gold Corp" id="teamimgs" src="./static/images/2.jpg">
                         <div class="carousel-caption">
                             <p>
-                                Ms Elizabeth Freeman </br>
+                                 Ms Alison J. Lapine </br>
                                 Regional Director South Africa</br>
                                 Glamour Gold Corp
                             </p>
@@ -194,7 +222,7 @@
                         <img alt="Regional Director East Africa, Glamour Gold Corp" id="teamimgs" src="./static/images/3.jpg">
                         <div class="carousel-caption">
                             <p>
-                                Dr Paul Aku </br>
+                                Dr.Onyemauchechi Olisaemeka </br>
                                 Regional Director East Africa</br>
                                 Glamour Gold Corp
                             </p>
@@ -214,7 +242,7 @@
             
             <!-- / team carousel/ -->
             <!-- title -->
-            <p id="titles"id="membership">Membership</p>
+            <h4 id="titles"id="membership">Membership</h4>
             <p>Our Memberships and Partners:</p>
             <!-- memebership carousel -->
 
@@ -317,7 +345,7 @@
                         <p>
                             <i class="fa fa-home mr-3"></i> Mwingi road Kileleshwa, PO BOX 30516, Nairobi, Kenya</p>
                         <p>
-                            <i class="fa fa-envelope mr-3"></i> something@gmail.com</p>
+                            <i class="fa fa-envelope mr-3"></i>info@glgoldcorp.org.ne</p>
                         <p>
                             <i class="fa fa-phone mr-3"></i> + 111 222 3333</p>
                         <p>
@@ -353,7 +381,7 @@
                         <div id="myicon" class="text-center text-md-right">
                             <ul class="list-unstyled list-inline">
                                 <li class="list-inline-item">
-                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/glamourgold.corp.1">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
@@ -399,7 +427,7 @@
         
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <form action="/action_page.php">
+                        <form action="#">
                             <div class="form-group">
                                 <div class="form-group">
                                     <label for="name">First Name:</label>
@@ -417,12 +445,18 @@
                                     <label for="email">Email address:</label>
                                     <input type="email" class="form-control" id="email"/>
                                 </div>
+                                <div class="form-group">
+                                    <label for="phoneno">Your Phone number*</label>
+                                    <input type="number" class="form-control" id="phoneno" class="required"/>
+                                </div>
+                                <div>
+                                    <label for="query">Query</label>
+                                    <input type="textarea" class="form-control" id="query" limit="50">
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
                             </div>
-                            <div class="form-group">
-                            <label for="query">Query</label>
-                                <input type="textarea" class="form-control" id="query" limit="50">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                     <!-- Modal footer -->
@@ -430,6 +464,52 @@
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
         
+                </div>
+            </div>
+        </div>
+        <!-- services dropdown modal start -->
+        <div class="modal fade" id="GServices" id="ServicesModal" style="width:40%;">
+            <div class="modal-dialog" style="position:absolute;max-width:none; margin:auto;overflow:scroll;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Services</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body"style="background-color:black;color:white;">
+                        <p>
+                            <h5 id="MResearch">Marketing and Research :</h5>
+                            
+                            Glamour Gold Corp has deep industry knowledge 
+                            meaningful insights and the broadest range of capabilities
+                            that help our clients  reach the next level of performance.
+                            Through consumer research, we  dismantle the dynamism in consumer behavior,
+                            by understanding their preferences, motivations and buying trends.
+                            Our analysis provides organizations with precise and unswerving information
+                            about their target.
+                            Glamour gold corp marketing research enables organizations to tap into customer data and insights in
+                            order to better connect with target audiences and develop winning marketing strategies. We conduct feasibility studies to
+                            inform organizations management on the prospects for success of their existing business or proposed venture by uncovering
+                            the strengths, weaknesses, opportunities, threats and resources required to implement the project. Our business analysts employ
+                            latest techniques in identifying organization needs and determining solutions to business problems that deliver value to
+                            stakeholders.
+                        </p>
+                        <p>
+                            <h5 id="Bconsultancy"></h5>
+                            <p>
+                                <h5>Business Consultancy:</h5>
+                                <p> Under business consultancy we provide:</br>
+                                Company creation and management services in the African continent Business</br> 
+                                Information and guidelines on digital marketing strategies </br>
+                                Information on developed and Emerging markets</br></p>
+                            </p>
+                        </p>
+                        <p>
+                            <a style="color:gold"data-dismiss="modal" data-toggle="modal" data-target="#myModal">send us an Email</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
